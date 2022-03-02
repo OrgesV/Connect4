@@ -122,12 +122,7 @@ function handleClick(evt) {
   // place piece in board and add to HTML table
   // TODO: add line to update in-memory board
   placeInTable(y, x);
-  for(let i = board.length - 1; i >=0; i--){
-    if(board[i][x] == null){
-      board[i][x] = currPlayer
-      break;
-    }
-  }
+  board[y][x] = currPlayer
  
 
   // check for win
